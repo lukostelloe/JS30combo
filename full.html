@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full</title>
+    <link rel="stylesheet" href="css/full.css" />
+    <script src="js/clickdrag.js" defer></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/drumkit.js" defer></script>
+    <script src="js/flexpanel.js" defer></script>
+    <script src="js/holdshift.js" defer></script>
+    <script src="js/mouseover.js" defer></script>
+    <script src="js/sort.js" defer></script>
+    <script src="js/sticky.js" defer></script>
+  </head>
+  <body onscroll="scrollStick()">
+    <header>
+      <div id="mouseshadow">
+        <div class="hero">
+          <h1 class="pizza" contenteditable>WHAT A FUN PAGE</h1>
+        </div>
+      </div>
+    </header>
+    <div id="full">
+      <div id="stickynav">
+        <nav id="main">
+          <ul>
+            <li class="logo"><a href="#">FUN PAGE</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#clock">Clock</a></li>
+            <li><a href="#drums">Drums</a></li>
+            <li><a href="#clickanddrag">ClickDrag</a></li>
+            <li><a href="#">Maps</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="clock">
+        <div class="clock">
+          <div class="clock-face">
+            <div class="hand hours"></div>
+            <div class="hand mins"></div>
+            <div class="hand seconds"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="drums">
+        <div class="keys">
+          <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>
+          </div>
+          <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+          </div>
+          <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+          </div>
+          <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+          </div>
+          <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">boom</span>
+          </div>
+          <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+          </div>
+          <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+          </div>
+          <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">tom</span>
+          </div>
+          <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+          </div>
+        </div>
+
+        <audio id="A" data-key="65" src="sounds/clap.wav"></audio>
+        <audio id="B" data-key="83" src="sounds/hihat.wav"></audio>
+        <audio id="C" data-key="68" src="sounds/kick.wav"></audio>
+        <audio id="D" data-key="70" src="sounds/openhat.wav"></audio>
+        <audio id="E" data-key="71" src="sounds/boom.wav"></audio>
+        <audio id="F" data-key="72" src="sounds/ride.wav"></audio>
+        <audio id="G" data-key="74" src="sounds/snare.wav"></audio>
+        <audio id="H" data-key="75" src="sounds/tom.wav"></audio>
+        <audio id="I" data-key="76" src="sounds/tink.wav"></audio>
+      </div>
+
+      <!-- CLICKANDDRAG -->
+      <div id="clickanddrag">
+        <div class="items">
+          <div class="item item1">01</div>
+          <div class="item item2">02</div>
+          <div class="item item3">03</div>
+          <div class="item item4">04</div>
+          <div class="item item5">05</div>
+          <div class="item item6">06</div>
+          <div class="item item7">07</div>
+          <div class="item item8">08</div>
+          <div class="item item9">09</div>
+          <div class="item item10">10</div>
+          <div class="item item11">11</div>
+          <div class="item item12">12</div>
+          <div class="item item13">13</div>
+          <div class="item item14">14</div>
+          <div class="item item15">15</div>
+          <div class="item item16">16</div>
+          <div class="item item17">17</div>
+          <div class="item item18">18</div>
+          <div class="item item19">19</div>
+          <div class="item item20">20</div>
+          <div class="item item21">21</div>
+          <div class="item item22">22</div>
+          <div class="item item23">23</div>
+          <div class="item item24">24</div>
+          <div class="item item25">25</div>
+        </div>
+      </div>
+
+      <!-- FLEX PANELS -->
+
+      <div class="panels">
+        <div class="panel panel1">
+          <p>Hey</p>
+          <p>Let's</p>
+          <p>Dance</p>
+        </div>
+        <div class="panel panel2">
+          <p>Give</p>
+          <p>Take</p>
+          <p>Receive</p>
+        </div>
+        <div class="panel panel3">
+          <p>Experience</p>
+          <p>It</p>
+          <p>Today</p>
+        </div>
+        <div class="panel panel4">
+          <p>Give</p>
+          <p>All</p>
+          <p>You can</p>
+        </div>
+        <div class="panel panel5">
+          <p>Life</p>
+          <p>In</p>
+          <p>Motion</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
